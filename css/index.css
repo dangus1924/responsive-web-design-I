@@ -69,7 +69,14 @@ h1, h2, h3, h4, h5 {
   /* TB LR */
   margin: 0 auto;
 }
-
+@media (max-width: 500px) {
+    .container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
 /* header */
 
 header nav {
@@ -79,12 +86,38 @@ header nav {
   margin-top: 35px;
 }
 
+/* @media (max-width: 500px) {
+    .logo {
+     display: block;
+     margin-left: auto;
+     margin-right: auto; 
+
+ }
+} */
+/* Mobile view */
+
 header nav a {
   margin-right: 65px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
 }
+
+/* @media (max-width: 500px) {
+       header nav a {
+        /* flex-direction: column-reverse;
+        flex-flow: wrap; */
+        display: block;
+        width: 50%;
+        height: 30px;
+        font-size: 25px;
+        border-top: 2px  solid;
+        border-bottom: 2px solid;
+        padding: 1px px;
+        text-align: center;
+        
+    }
+} */
 
 header nav a:hover {
   text-decoration: underline;
