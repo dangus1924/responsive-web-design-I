@@ -1,3 +1,284 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,
+h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,
+cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,
+th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,
+hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 500px) {
+  header nav  {
+    display: flex;
+    flex-flow: column; 
+    
+  
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 
 
+@media (max-width: 800px) {
+  header nav  {
+    display: flex;     
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+@media (max-width: 500px) {
+  a {
+    /* display: flex;     */
+    border-bottom: solid;
+    height: 50px;
+    font-size: 18px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 20px;
+    text-align: center;  
+    width: 90%;
+      
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    border-top: solid;
+    width: 90%;
+   }  
+}
+
+@media (max-width: 500px) {
+  .middle-imga {
+    display: none;   
+  }
+}
+
+@media (max-width: 800px) {
+  .middle-imga {
+    display: none;
+    
+  }
+}
+
+
+header nav {
+  width: 610px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: #b0b0b0;
+}
+
+header nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.cta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 72px;
+}
+
+@media (max-width: 500px) {
+  .cta .left-content {
+    display: flex; 
+    width: 100%;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .cta .left-content {
+    display: flex; 
+    width: 100%;
+    
+  }
+}
+
+.cta .left-content {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin-right: 82px;
+}
+
+.cta .left-content button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cta .left-content button:hover {
+  color: white;
+  background: black;
+}
+
+.middle-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 75px;
+  margin-bottom: 35px;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (max-width: 500px) {
+  .top-row {
+    display: flex;
+    flex-flow: column;
+    height: 250px;
+    justify-content: space-evenly
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .top-row {
+    display: flex;
+    flex-flow: row;  
+    
+  }
+}
+
+.middle-content .top-row {
+  display: flex;
+}
+
+.middle-content img {
+  display: block;
+  margin: 30px auto;
+}
+
+@media (max-width: 500px) {
+  .middle-img {
+    display: flex; 
+    width: 100%;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .middle-img {
+    display: flex; 
+    width: 100%;
+    
+  }
+}
+
+.middle-content .bottom-row {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .bottom-row {
+    display: flex;
+    flex-flow: column;
+    height: 350px;
+    justify-content: space-evenly
+    
+  }
+}
+
+.middle-content .bottom-row p {
+  padding-right: 20px;
+}
+
+.contact p {
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
